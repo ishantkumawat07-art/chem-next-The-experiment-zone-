@@ -1,0 +1,84 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chemistry Virtual Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ <header class="header">
+   <div class="header-inner">
+
+      <h1 class="logo">chemistry virtual lab</h1>
+      <p class="tagline">Explore the periodic table and simple reaction</p>
+
+      <div class="search-box">
+         <input type="text" placeholder="Search element">
+         <button>Search</button>
+      </div>
+
+   </div>
+</header>
+    <main class="main"> 
+      <div class="sidebar">
+<h3>RESOURCES BY TOPIC</h3>
+
+<ul>
+<li>Stoichiometry</li>
+<li>Thermochemistry</li>
+<li>Kinetics</li>
+<li>Equilibrium</li>
+<li>Acid-Base Chemistry</li>
+<li>Solubility</li>
+<li>Oxidation/Reduction and Electrochemistry</li>
+<li>Analytical Chemistry / Lab Techniques</li>
+<li>Physical Chemistry</li>
+<li>Properties of Solutions</li>
+</ul>
+
+</div>
+     <section class="card">
+      <h2 class="card-title">Reaction Simulation</h2>
+      <p class="card-description">
+        Choose two chemicals and simulate a simple reaction.
+      </p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="chemical1" class="label">Chemical 1</label>
+          <select id="chemical1" class="select">
+            <option value="">-- Select --</option>
+            <option value="HCl">Hydrochloric acid (HCl)</option>
+            <option value="NaOH">Sodium hydroxide (NaOH)</option>
+            <option value="Na">Sodium (Na)</option>
+            <option value="Water">Water (H₂O)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="chemical2" class="label">Chemical 2</label>
+          <select id="chemical2" class="select">
+            <option value="">-- Select --</option>
+            <option value="HCl">Hydrochloric acid (HCl)</option>
+            <option value="NaOH">Sodium hydroxide (NaOH)</option>
+            <option value="Na">Sodium (Na)</option>
+            <option value="Water">Water (H₂O)</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="mixBtn" class="btn">Mix Chemicals</button>
+
+      <p id="reactionResult" class="output"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Beginner-friendly demo • Pure HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <!-- Script is placed before closing body as requested -->
+  <script src="script.js"></script>
+</body>
+</html>
